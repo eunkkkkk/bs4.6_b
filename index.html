@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>광고웹앱 제작하기</title>
+    <link rel="stylesheet" href="/css/bootstrap_4.6.css">
+    <link rel="stylesheet" href="/plugin/swiper/swiper-bundle_8.24.min.css">
+    <link rel="stylesheet" href="/css/basic.css">
+    <script src="plugin/swiper/swiper-bundle_8.min.js"></script>
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/basic.js"></script>
+</head>
+<body>
+<div class="swiper" id="mainbanner">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">코닥이벤트1</div>
+      <div class="swiper-slide">코닥이벤트2</div>
+      <div class="swiper-slide">코닥이벤트3</div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-scrollbar"></div>
+</div>
+<script>
+    const swiper = new Swiper('.swiper', {
+        direction: 'vertical',
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+    });
+</script>
+</body>
+</html>
